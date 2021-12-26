@@ -1,0 +1,19 @@
+@media (max-width: 576px) {
+    .era {
+        display: none;
+    }
+
+    .img-log {
+        display: none;
+    }
+
+    .img-info {
+        width: 250px;
+    }
+    /*.img-log1{*/
+    /*    width: 30px;*/
+    /*}*/
+    .img-face{
+        display: none;
+    }
+}
