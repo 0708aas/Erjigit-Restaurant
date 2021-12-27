@@ -35,7 +35,7 @@ const Info = () => {
                     {
                         foodInfo.ings?.map((it, idx) => {
                             return (
-                                <div key={foodInfo.title} className="col-3">
+                                <div key={foodInfo.title} className="col-sm-6 col-md-4 col-lg-3">
                                     <div className="ing-block" key={idx}>
                                         <Link className="link-text" to={`/product/${it}`}>
                                             <img className="img-ings"

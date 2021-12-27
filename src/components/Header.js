@@ -11,7 +11,7 @@ const Header = () => {
     const [input, setInput] = useState('')
     const navigaite = useNavigate()
     const hendlInput = (e) => {
-        setInput(e.target.value.trim(''))
+        setInput(e.target.value.trim())
     }
     const click = () => {
         navigaite(`/search/${input}`)

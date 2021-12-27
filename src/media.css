@@ -2,6 +2,9 @@
     .era {
         display: none;
     }
+    .box{
+        margin-bottom: 20px;
+    }
     .bg{
         padding: 0;
     }
@@ -35,7 +38,7 @@
 
     .input {
         width: 125px;
-        padding: 1px;
+        padding: 1px  8px;
     }
 
     .link-btn {
