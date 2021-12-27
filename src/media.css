@@ -2,6 +2,9 @@
     .era {
         display: none;
     }
+    .bg{
+        padding: 0;
+    }
 
     .img-log {
         display: none;

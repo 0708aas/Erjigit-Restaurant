@@ -16,7 +16,6 @@ const App = () => {
                 <Route path="/" element={<Foods/>}/>
                 <Route path="/food/:id" element={<Info/>}/>
                 <Route path="/product/:name" element={<Products/>}/>
-
                 <Route path="*" element="404 not found"/>
             </Routes>
         </BrowserRouter>

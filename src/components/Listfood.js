@@ -16,7 +16,8 @@ const Listfood = () => {
         <div className="container">
                 <div className="row">
                     {
-                        listFood.map(it => {
+                        listFood  ?   listFood.map(it => {
+
                             return (
                                 <div key={it.idMeal} className="img col-sm-6 col-md-4 col-lg-3">
                                     <div className="box">
@@ -27,7 +28,7 @@ const Listfood = () => {
                                     </div>
                                 </div>
                             )
-                        })
+                        }): "ничего не найдено"
                     }
                 </div>
             </div>
