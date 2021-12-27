@@ -14,7 +14,6 @@ const Listfood = () => {
     return (
         <div className="bg">
         <div className="container">
-
                 <div className="row">
                     {
                         listFood.map(it => {

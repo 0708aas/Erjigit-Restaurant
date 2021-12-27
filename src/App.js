@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Listfood from "./components/Listfood";
 // import {Navigate} from "react-router-dom";
 import Products from "./components/Products";
+
 const App = () => {
     return (
         <BrowserRouter>
@@ -16,7 +17,7 @@ const App = () => {
                 <Route path="/food/:id" element={<Info/>}/>
                 <Route path="/product/:name" element={<Products/>}/>
 
-                {/*<Route path="*" element={Navigate to="/"}/>*/}
+                <Route path="*" element="404 not found"/>
             </Routes>
         </BrowserRouter>
     );

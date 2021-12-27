@@ -29,32 +29,40 @@ const Info = () => {
 
     return (
         <div className="info-bg">
-            <div key={foodInfo.title} className="container">
+            <div className="container">
                 <img className="img-info" src={foodInfo.strMealThumb} alt=""/>
+                <div className="row">
+                    {
+                        foodInfo.ings?.map((it, idx) => {
+                            return (
+                                <div key={foodInfo.title} className="col-3">
+                                    <div className="ing-block" key={idx}>
+                                        <Link className="link-text" to={`/product/${it}`}>
+                                            <img className="img-ings"
+                                                 src={`https://www.themealdb.com/images/ingredients/${it}-Small.png`}
+                                                 alt=""/>
+                                            <div className="ings">{it}</div>
+                                        </Link>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+
+
                 <div className="link-text"><span className="ings">Category: </span> {foodInfo.strCategory}</div>
                 <div className="link-text"><span className="ings">Meal:</span> {foodInfo.strMeal}</div>
                 <div className="link-text"><span className="ings">Area:</span> {foodInfo.strArea}</div>
                 <br/>
-                <div className="link-text"><span className="ings">Instructions : </span> {foodInfo.strInstructions}
+                <div className="link-text"><span
+                    className="ings">Instructions : </span> {foodInfo.strInstructions}
                 </div>
 
-                {
-                    foodInfo.ings?.map((it, idx) => {
-                        return (
-                            <div className="ing-block row" key={idx}>
-                                <div className="ing col-sm-6 col-md-4 col-lg-3">
-                                    <Link className="link-text" to={`/product/${it}`}>
-                                        <img className="img-ings" src={`https://www.themealdb.com/images/ingredients/${it}-Small.png`} alt=""/>
-                                        <div className="ings">{it}</div>
-                                    </Link>
-                                </div>
-                            </div>
-                        )
-                    })
-                }
             </div>
         </div>
-    );
+</div>
+)
+    ;
 };
 
 export default Info;
