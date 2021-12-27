@@ -12,7 +12,7 @@ const Products = () => {
     useEffect(() => {
         axios(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${name}`)
             .then(({data}) => setIngs(data.meals))
-    }, [])
+    }, [name])
 
     return (
         <div className="bg">
