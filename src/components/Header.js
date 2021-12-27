@@ -3,7 +3,7 @@ import {useNavigate} from "react-router-dom";
 import bg from '../img/pngegg.png'
 import inst from '../img/inst.png'
 import face from '../img/face.png'
-import vg from '../img/bur.jpg'
+// import vg from '../img/bur.jpg'
 import {NavLink} from "react-router-dom";
 
 const Header = () => {
@@ -22,8 +22,6 @@ const Header = () => {
             navigaite(`/search/${input}`)
         }
     }
-    const [burger, setBurger] = useState(false)
-
     return (
 
         <div className="head ">
