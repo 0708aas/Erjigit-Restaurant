@@ -22,8 +22,7 @@ const Foods = () => {
                                     <div className="box">
                                         <Link className="link-text" to={`/food/${it.idMeal}`}>
                                             <img className="img" src={it.strMealThumb} alt=""/>
-                                            <br/>
-                                            {it.strMeal}
+                                           <div className="text-break">{it.strMeal}</div>
                                         </Link>
                                     </div>
                                 </div>
