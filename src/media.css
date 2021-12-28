@@ -2,10 +2,12 @@
     .era {
         display: none;
     }
-    .box{
+
+    .box {
         margin-bottom: 20px;
     }
-    .bg{
+
+    .bg {
         padding: 0;
     }
 
@@ -18,7 +20,8 @@
     }
 
     .img-info {
-        width: 250px;
+        width: 220px;
+        height: 200px;
     }
 
     /*.img-log1{*/
@@ -38,11 +41,19 @@
 
     .input {
         width: 125px;
-        padding: 1px  8px;
+        padding: 1px 8px;
     }
 
     .link-btn {
         padding: 1px;
     }
 
+    .img {
+        height: 240px;
+        margin-bottom: 20px;
+    }
+
+    .link-text {
+        font-size: 15px;
+    }
 }

@@ -27,12 +27,13 @@ const Header = () => {
             <div className="container">
                 <div className="block-header">
                     <div className="img-food">
-                        <NavLink to="/"> <img className="img-log1" src={bg} alt=""/> </NavLink>
-                           <h3 className="era">𝕰𝖗𝖟𝖍𝖎𝖌𝖎𝖙 𝕽𝖊𝖘𝖙𝖆𝖚𝖗𝖆𝖓𝖙</h3>
+                        <NavLink to="/"> <img className="img-log1" src={bg} alt=""/></NavLink>
+                            <h3 className="era">𝕰𝖗𝖟𝖍𝖎𝖌𝖎𝖙 𝕽𝖊𝖘𝖙𝖆𝖚𝖗𝖆𝖓𝖙</h3>
                     </div>
                     <div className="block-search">
                         <a href="https://www.instagram.com/?hl=ru"><img className="img-inst" src={inst} alt=""/></a>
-                        <a href="https://www.facebook.com/v6.0/dialog/oauth/read/"><img className="img-face" src={face} alt=""/></a>
+                        <a href="https://www.facebook.com/v6.0/dialog/oauth/read/"><img className="img-face" src={face}
+                                                                                        alt=""/></a>
 
                         <input onKeyDown={inp} className="input" onChange={hendlInput} type="text"/>
                         <button disabled={!input} onClick={click} className="link-btn">search</button>
